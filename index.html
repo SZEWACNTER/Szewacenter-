@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Moja strona do testowania HTML</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Tf2.06a_Pico_Viejo%2C_-de_Teide.jpg/1280px-Tf2.06a_Pico_Viejo%2C_-de_Teide.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 90px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; 
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; 
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Tf2.06a_Pico_Viejo%2C_-de_Teide.jpg/1280px-Tf2.06a_Pico_Viejo%2C_-de_Teide.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 90px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Moja strona do trenowania html</h2>
+<p>In this example, we learn how to use html language.</p>
+
+<header>
+  <h2>Moje strony</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#omnie">O mnie</a></li>
+      <li><a href="#moje_hobby">Moje hobby</a></li>
+    </ul>
+  </nav>
+  
+  <article id='omnie'>
+    <h1>Tutaj napisze tekst o mnie</h1>
+    <p>In this example, we learn how to use html language. In this example, we learn how to use html languageIn this example, we learn how to use html languageIn this example, we learn how to use html languageIn this example, we learn how to use html languageIn this example, we learn how to use html languageIn this example, we learn how to use html languageIn this example, we learn how to use html languageIn this example, we learn how to use html languageIn this example, we learn how to use html languageIn this example, we learn how to use html language</p>
+  </article>
+</section>
+
+<article id='moje_hobby'>
+    <h1>Tutaj napisze tekst o mnie</h1>
+    <p>Tutaj wypadalo by wpisać treść strony. </p>
+  </article>
+</section>
+
+<footer>
+   
+</footer>
+
+</body>
+</html>
